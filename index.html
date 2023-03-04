@@ -12,10 +12,54 @@
     <div class="container">
         <!-- Page container -->
         <div class="row">
-            <!-- Divide up column -->
-            <div class="col-sm col-md-6 col-lg-2">Col 1</div>
-            <div class="col-sm col-md-6 col-lg-5">Col 2</div>
-            <div class="col-md-12 col-lg-5">Col 3</div>
+            <!-- Divide up columns -->
+            <div class="col-sm col-md-6 col-lg-2">
+                <h1>Welcome!</h1>
+                <button>Compose</button>
+                <!-- Function lists -->
+                <ul>
+                    <li>Input</li>
+                    <li>Tagged</li>
+                    <li>Important</li>
+                    <li>Sent Emails</li>
+                    <li>Drafts</li>
+                    <li>Trash</li>
+                </ul>
+            </div>
+            <div class="col-sm col-md-6 col-lg-5">
+                <!-- Search bar -->
+                <input type="text" placeholder="Search">
+                <!-- List of email in inbox -->
+                <div class="email">
+                    <p class="sender">Linkedln</p>
+                    <p>You have a new connection request</p>
+                </div>
+                <div class="email">
+                    <p class="sender">Michael Scott Daily Quotes</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="email">
+                    <p class="sender">LaMar Software</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <!-- 3 section of the third column -->
+                <!-- Top = email info -->
+                <!-- Middle = email content -->
+                <!-- Bottom = reply box -->
+                <div class="email-info">
+                    <p>To: taylor@lamarsoftware.io</p>
+                    <p>From: michael@dailyquotes.com</p>
+                </div>
+                <div class="email-content">
+                    <h1>Michael Scott Daily Quotes</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem numquam commodi deleniti vero sunt ipsa sed deserunt tempora blanditiis adipisci. Reprehenderit veniam itaque necessitatibus sint omnis iste esse, architecto dolorem, consectetur debitis in quis similique sunt atque nam? Corrupti hic nostrum dolores amet blanditiis veritatis placeat eos, sapiente perspiciatis odit?</p>
+                </div>
+                <div class="reply">
+                    <input id="reply-box" type="text" placeholder="reply">
+                </div>
+            </div>
 
         </div>
     </div>
