@@ -1,4 +1,54 @@
-.container{
+body{
     width: 100vw;
     height: 100vh;
+}
+.container-fluid{
+    height:100%;
+    padding:0px;
+}
+.row{
+    height:100%;
+    width: 100%;
+}
+.column1{
+    background-color: bisque;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#welcome{
+    font-size:large;
+    font-weight:bold;
+    margin: 1rem;
+    font-size: 2rem;
+}
+button{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border:none;
+}
+button:hover{
+    box-shadow: 0.2rem 0.2rem 0.4rem red;;
+}
+ul{
+    margin: 1rem 0rem;
+    width: 100%;
+    list-style: none;
+}
+li{
+    margin: 1rem;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+li:hover{
+    font-size: 1.5rem;
+    position:relative;
+    color:cornflowerblue;
+}
+.column2{
+    background-color: darkgray;
+}
+.column3{
+    background-color: darksalmon;
 }
