@@ -22,14 +22,14 @@ body{
     margin: 1rem;
     font-size: 2rem;
 }
-button{
+.column1 button{
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     border-radius: 10px;
     border:none;
 }
 button:hover{
-    box-shadow: 0.2rem 0.2rem 0.4rem red;;
+    box-shadow: 0.2rem 0.2rem 0.4rem red;
 }
 ul{
     margin: 1rem 0rem;
@@ -48,6 +48,52 @@ li:hover{
 }
 .column2{
     background-color: darkgray;
+    display:flex;
+    flex-direction:column;
+    justify-content: start;
+}
+.search-bar{
+    width: 95%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lavender;
+    height: 3rem;
+}
+.input-group-text{
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 5px;
+    padding: 0.6rem 0.75rem;
+    background-color: transparent;
+    border:none;
+}
+.search{
+    border:none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: transparent;
+}
+.search-bar:focus-within, .search:focus{
+    background-color: white;
+    box-shadow:none;
+}
+.inbox{
+    width: 100%;
+}
+.email{
+    width: 95%;
+    background-color: white;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: solid transparent;
+}
+.email:hover{
+    border: solid;
+}
+.email.unread p{
+    font-weight: bold;
 }
 .column3{
     background-color: darksalmon;
