@@ -154,6 +154,20 @@ span i.fa-solid.fa-magnifying-glass:hover{
 .email-content p{
     font-size: 1.25rem;
 }
+.email-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.email-buttons{
+    display: flex;
+}
+.email-buttons i{
+    align-self:center;
+    margin-bottom:3rem;
+}
+.email-buttons i:hover{
+    color:cornflowerblue;
+}
 .form{
     margin: 1.5rem;
     font-size:1.5rem;
