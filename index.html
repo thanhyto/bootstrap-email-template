@@ -14,12 +14,12 @@
         <!-- Page container -->
         <div class="row g-0">
             <!-- Divide up columns -->
-            <div class="column1 col-sm col-md-6 col-lg-2">
+            <div class="column1 col-md-6 col-lg-3">
                 <p id="welcome">Welcome!</p>
                 <button><i class="fa-solid fa-pen fa-fw"></i>Compose</button>
                 <!-- Function lists -->
                 <ul>
-                    <li><i class="fa-solid fa-inbox fa-fw"></i>Inbox</li>
+                    <li class="open"><i class="fa-solid fa-inbox fa-fw"></i>Inbox (2)</li>
                     <li><i class="fa-solid fa-tag fa-fw"></i>Tagged</li>
                     <li><i class="fa-solid fa-star fa-fw"></i>Important</li>
                     <li><i class="fa-solid fa-paper-plane fa-fw"></i>Sent</li>
@@ -27,26 +27,35 @@
                     <li><i class="fa-solid fa-trash fa-fw"></i>Trash</li>
                 </ul>
             </div>
-            <div class="column2 col-sm col-md-6 col-lg-5">
+            <div class="column2 col-sm col-md-6 col-lg-4">
                 <!-- Search bar -->
                 <div class="search-bar input-group">
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                     </div>    
-                    <input class="search form-control" type="text" placeholder="Search">
+                    <input class="search form-control" type="text" placeholder="Search for emails">
                 </div>
                 <!-- List of email in inbox -->
                 <div class="inbox">
                     <div class="email unread">
-                        <p class="sender">Linkedln</p>
+                        <div class="sender">
+                            <p>Linkedln</p>
+                            <p>7:10pm</p>
+                        </div>
                         <p>You have a new connection request</p>
                     </div>
                     <div class="email read">
-                        <p class="sender">Michael Scott Daily Quotes</p>
+                        <div class="sender">
+                            <p>Michael Scott Daily Quotes</p>
+                            <p>Jan 3, 2023</p>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
                     <div class="email unread">
-                        <p class="sender">LaMar Software</p>
+                        <div class="sender">
+                            <p>LaMar Software</p>
+                            <p>Nov 20, 2022</p>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
                 </div>
@@ -64,8 +73,14 @@
                     <h1>Michael Scott Daily Quotes</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem numquam commodi deleniti vero sunt ipsa sed deserunt tempora blanditiis adipisci. Reprehenderit veniam itaque necessitatibus sint omnis iste esse, architecto dolorem, consectetur debitis in quis similique sunt atque nam? Corrupti hic nostrum dolores amet blanditiis veritatis placeat eos, sapiente perspiciatis odit?</p>
                 </div>
-                <div class="reply">
-                    <input id="reply-box" type="text" placeholder="reply">
+                <div class="form">
+                    <div class="form-group">
+                        <textarea class="form-control" id="reply" rows="10" placeholder=". . ."></textarea>
+                    </div>
+                    <div class="attach">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <button class="reply-btn">Reply</button>
+                    </div>
                 </div>
             </div>
 

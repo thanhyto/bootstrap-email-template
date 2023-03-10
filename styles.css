@@ -1,6 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x:hidden;
 }
 .container-fluid{
     height:100%;
@@ -15,14 +16,16 @@ body{
     display:flex;
     flex-direction: column;
     align-items: start;
+    min-width: auto;
 }
 #welcome{
     font-size:large;
     font-weight:bold;
     font-size: 2rem;
     display: flex;
-    align-self: center;
+    align-self: start;
     margin-top: 2rem;
+    margin-left: 2.5rem;
 }
 .column1 button{
     padding: 0.5rem 0rem;
@@ -35,7 +38,7 @@ body{
     border:none;
     font-size: 1.25rem;
 }
-button:hover{
+.column1 button:hover{
     box-shadow: 0.2rem 0.2rem 0.4rem cornflowerblue;
 }
 .fa-fw{
@@ -46,15 +49,26 @@ ul{
     width: 80%;
     list-style: none;
 }
-li{
+ul li{
     margin: 1rem;
     line-height: 2rem;
     font-size: 1.25rem;
+    position: relative;
 }
-li:hover{
+ul li.open{
+    font-weight:bold;
+}
+ul li:hover{
     font-size: 1.5rem;
     position:relative;
     color:cornflowerblue;
+    cursor: pointer;
+    font-weight: 500;
+}
+ul li.open:hover{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
 }
 .column2{
     background-color: darkgray;
@@ -86,23 +100,82 @@ li:hover{
     background-color: white;
     box-shadow:none;
 }
+span i.fa-solid.fa-magnifying-glass:hover{
+    color:cornflowerblue;
+}
 .inbox{
     width: 100%;
+}
+.sender{
+    display:flex;
+    justify-content: space-between;
 }
 .email{
     width: 95%;
     background-color: white;
-    margin: 10px;
-    padding: 10px 5px;
+    margin: 1rem 10px;
+    padding: 10px 10px;
     border-radius: 15px;
     border: solid transparent;
 }
 .email:hover{
     border: solid;
+    box-shadow: 0.2rem 0.2rem 0.4rem white;
 }
 .email.unread p{
     font-weight: bold;
 }
 .column3{
     background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2rem;
+}
+.email-info{
+    margin: 1.5rem;
+    margin-top: 0;
+    font-size:1rem;
+}
+.email-info p{
+    margin-bottom: 0.2rem;
+}
+.email-content{
+    margin: 1.5rem;
+}
+.email-content h1{
+    margin-bottom:3rem;
+}
+.email-content p{
+    font-size: 1.25rem;
+}
+.form{
+    margin: 1.5rem;
+    font-size:1.5rem;
+}
+.attach{
+    margin-top:1rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+.attach i{
+    font-size: 2rem;
+}
+.attach i:hover{
+    color: cornflowerblue;
+    font-size: 2.25rem;
+}
+.form-control{
+    font-size: 1.5rem;
+}
+.reply-btn{
+    height:100%;
+    font-size: 1.25rem;
+    color: cornflowerblue;
+    font-weight: bold;
+    padding: 0.2rem 2rem;
+    border: solid cornflowerblue;
+    border-radius: 10px;
+    background-color: white;
 }
