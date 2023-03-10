@@ -12,7 +12,7 @@ body{
     width: 100%;
 }
 .column1{
-    background-color: bisque;
+    background-color: #D3E3FD;
     display:flex;
     flex-direction: column;
     align-items: start;
@@ -37,9 +37,10 @@ body{
     height: 3.5rem;
     border:none;
     font-size: 1.25rem;
+    background-color: #c2e7ff;
 }
 .column1 button:hover{
-    box-shadow: 0.2rem 0.2rem 0.4rem cornflowerblue;
+    box-shadow: 0.2rem 0.3rem 0.6rem #696868;
 }
 .fa-fw{
     padding-right: 2.5rem;
@@ -61,7 +62,7 @@ ul li.open{
 ul li:hover{
     font-size: 1.5rem;
     position:relative;
-    color:cornflowerblue;
+    color:#308fce;
     cursor: pointer;
     font-weight: 500;
 }
@@ -71,7 +72,7 @@ ul li.open:hover{
     color: black;
 }
 .column2{
-    background-color: darkgray;
+    background-color: #EAF1FB;
     display:flex;
     flex-direction:column;
     justify-content: start;
@@ -81,7 +82,7 @@ ul li.open:hover{
     width: 95%;
     margin: 10px;
     border-radius: 20px;
-    background-color: lavender;
+    background-color: #c2e7ff;
     height:3rem;
 }
 .input-group-text{
@@ -117,16 +118,20 @@ span i.fa-solid.fa-magnifying-glass:hover{
     padding: 10px 10px;
     border-radius: 15px;
     border: solid transparent;
+    cursor:pointer;
 }
 .email:hover{
     border: solid;
     box-shadow: 0.2rem 0.2rem 0.4rem white;
 }
+.email.unread{
+    background-color: #c2e7ff;
+}
 .email.unread p{
     font-weight: bold;
 }
 .column3{
-    background-color: darksalmon;
+    background-color: #CCCCCC;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -165,6 +170,7 @@ span i.fa-solid.fa-magnifying-glass:hover{
 .attach i:hover{
     color: cornflowerblue;
     font-size: 2.25rem;
+    cursor:pointer;
 }
 .form-control{
     font-size: 1.5rem;
@@ -178,4 +184,8 @@ span i.fa-solid.fa-magnifying-glass:hover{
     border: solid cornflowerblue;
     border-radius: 10px;
     background-color: white;
+}
+.reply-btn:hover{
+    color:white;
+    background-color: cornflowerblue;
 }
